@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Life OS privacy policy</title>
+<style>
+  :root{color-scheme:dark}
+  body{margin:0;background:#0B0F16;color:#E3E9F2;font:15px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif}
+  main{max-width:680px;margin:0 auto;padding:72px 24px}
+  h1{font-size:26px;font-weight:600;letter-spacing:-.015em;margin:0 0 4px}
+  .meta{color:#5A6675;font-size:13px;margin:0 0 32px}
+  h2{font-size:16px;font-weight:600;margin:32px 0 8px}
+  p,li{color:#C5CEDA}
+  ul{padding-left:20px}
+  code{font-size:13px;background:rgba(255,255,255,.06);padding:1px 5px;border-radius:4px}
+  table{border-collapse:collapse;width:100%;font-size:14px;margin:8px 0}
+  th,td{text-align:left;padding:8px 10px;border-bottom:1px solid rgba(255,255,255,.08);vertical-align:top}
+  th{color:#8794A5;font-weight:500}
+  a{color:#5B8DEF}
+</style>
+</head>
+<body>
+<main>
+  <h1>Privacy policy</h1>
+  <p class="meta">Life OS · Effective 14 September 2026</p>
+
+  <p>Life OS is a desktop app for one person, running on that person's own computer. This policy
+    explains what data it handles and where that data goes. In short: your data stays on your
+    computer, and the only other place it ever goes is your own Google account, and only if you
+    connect it.</p>
+
+  <h2>Data stored on your computer</h2>
+  <p>Everything you enter in Life OS is stored in a database file on your own computer: tasks,
+    projects, plans, habits, money records, people, notes and journal entries. It stays there. The
+    developer of Life OS does not operate any server, and has no way to see, collect or receive your
+    data.</p>
+
+  <h2>No analytics, tracking or advertising</h2>
+  <p>Life OS contains no analytics, telemetry, crash reporting, advertising or tracking of any kind.
+    Nothing is sent anywhere except to Google, and only as described below, after you connect your
+    own account.</p>
+
+  <h2>Google account (optional)</h2>
+  <p>You can choose to connect your Google account. Life OS then talks directly between your
+    computer and Google's servers. No other party is involved.</p>
+
+  <table>
+    <tr><th>Permission</th><th>What Life OS does with it</th></tr>
+    <tr>
+      <td>View and edit events on your calendars<br><code>calendar.events</code></td>
+      <td>Reads events from the calendars you select, to show them as busy time on the planning
+        grid. In a later version, Life OS will also write your planned tasks to a separate calendar
+        named "Life OS", which it creates. It never changes your other calendars' events.</td>
+    </tr>
+    <tr>
+      <td>See the list of your calendars<br><code>calendar.calendarlist.readonly</code></td>
+      <td>Lists your calendars so you can choose which ones appear in Life OS.</td>
+    </tr>
+    <tr>
+      <td>Its own private app folder in Google Drive<br><code>drive.appdata</code> (later version)</td>
+      <td>Stores a backup copy of your Life OS database, so you can use it on your own second
+        computer. This hidden folder can only be accessed by Life OS. Life OS cannot see any
+        other files in your Drive.</td>
+    </tr>
+  </table>
+
+  <p>Calendar events that Life OS reads are saved only in the database on your computer. Your
+    Google sign-in is stored on your computer, encrypted by your operating system (Windows DPAPI
+    or the macOS Keychain). It is never written to the database or sent anywhere except to Google.</p>
+
+  <h2>Google API Services User Data Policy</h2>
+  <p>Life OS's use and transfer of information received from Google APIs to any other app will
+    adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google
+    API Services User Data Policy</a>, including the Limited Use requirements. Data from Google is
+    used only to provide the features described above, to you. It is not transferred to anyone,
+    not used for advertising, not sold, and not used to train AI or machine-learning models.</p>
+
+  <h2>Disconnecting and deleting</h2>
+  <ul>
+    <li><b>Settings → Disconnect</b> in Life OS revokes its access at Google, deletes the stored
+      sign-in, and removes the calendar events it had copied.</li>
+    <li>You can also remove access at any time from your Google Account, under
+      <a href="https://myaccount.google.com/permissions">Third-party apps and services</a>.</li>
+    <li>Deleting the Life OS database file from your computer deletes all of your Life OS data.</li>
+  </ul>
+
+  <h2>Children</h2>
+  <p>Life OS is not directed at children under 13.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, the updated version will be published at this address, with a new
+    effective date.</p>
+
+  <h2>Contact</h2>
+  <p>For questions about this policy, open an issue in the GitHub repository that hosts this page.</p>
+
+  <p><a href="index.html">← Life OS</a></p>
+</main>
+</body>
+</html>
